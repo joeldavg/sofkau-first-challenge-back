@@ -24,19 +24,15 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<CategoryDTO> getAllCategories() {
         List<Category> categories = categoryRepository.findAll();
-
         List<CategoryDTO> categoriesDTO = toCategoriesDTO(categories);
-
         return categoriesDTO;
     }
 
     @Override
     public CategoryDTO saveCategory(CategoryDTO categoryDTO) {
-
         Category category = toCategory(categoryDTO);
         Category saveCategory = categoryRepository.save(category);
         CategoryDTO saveCategoryDTO = toCategoryDTO(saveCategory);
-
         return saveCategoryDTO;
     }
 
@@ -91,6 +87,5 @@ public class CategoryServiceImpl implements CategoryService {
         taskDTO.setCategoryId(task.getCategoryId());
         return taskDTO;
     }
-
 
 }
