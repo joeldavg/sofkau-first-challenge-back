@@ -6,8 +6,6 @@ import com.example.firstchallengeback.dto.TaskDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 public class TaskServiceImpl implements TaskService {
 
@@ -16,22 +14,17 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public TaskDTO saveTask(TaskDTO taskDTO) {
-
         Task task = toTask(taskDTO);
-
         Task saveTask = taskRepository.save(task);
         TaskDTO saveTaskDTO = toTaskDTO(saveTask);
-
         return saveTaskDTO;
     }
 
     @Override
     public TaskDTO updateTask(TaskDTO taskDTO) {
-
         Task task = toTask(taskDTO);
         Task saveTask = taskRepository.save(task);
         TaskDTO saveTaskDTO = toTaskDTO(saveTask);
-
         return saveTaskDTO;
     }
 
