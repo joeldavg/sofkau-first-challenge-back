@@ -1,4 +1,4 @@
-package com.example.firstchallengeback.entity;
+package com.example.firstchallengeback.dao.entity;
 
 import lombok.Data;
 

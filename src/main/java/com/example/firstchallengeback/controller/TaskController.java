@@ -1,6 +1,6 @@
 package com.example.firstchallengeback.controller;
 
-import com.example.firstchallengeback.entity.Task;
+import com.example.firstchallengeback.dao.entity.Task;
 import com.example.firstchallengeback.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

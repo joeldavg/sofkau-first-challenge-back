@@ -1,6 +1,6 @@
 package com.example.firstchallengeback.service;
 
-import com.example.firstchallengeback.entity.Category;
+import com.example.firstchallengeback.dao.entity.Category;
 
 import java.util.List;
 

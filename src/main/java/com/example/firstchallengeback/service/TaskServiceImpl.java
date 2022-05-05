@@ -1,7 +1,7 @@
 package com.example.firstchallengeback.service;
 
-import com.example.firstchallengeback.entity.Task;
-import com.example.firstchallengeback.repository.TaskRepository;
+import com.example.firstchallengeback.dao.entity.Task;
+import com.example.firstchallengeback.dao.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.example.firstchallengeback.service;
 
-import com.example.firstchallengeback.entity.Task;
+import com.example.firstchallengeback.dao.entity.Task;
 
 public interface TaskService {
 
