@@ -1,6 +1,6 @@
 package com.example.firstchallengeback.controller;
 
-import com.example.firstchallengeback.dao.entity.Task;
+import com.example.firstchallengeback.dto.TaskDTO;
 import com.example.firstchallengeback.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,13 +13,13 @@ public class TaskController {
     private TaskService taskService;
 
     @PostMapping("save")
-    public Task saveTask(@RequestBody Task task) {
-        return taskService.saveTask(task);
+    public TaskDTO saveTask(@RequestBody TaskDTO taskDTO) {
+        return taskService.saveTask(taskDTO);
     }
 
     @PutMapping("update")
-    public Task updateTask(@RequestBody Task task) {
-        return taskService.updateTask(task);
+    public TaskDTO updateTask(@RequestBody TaskDTO taskDTO) {
+        return taskService.updateTask(taskDTO);
     }
 
     @DeleteMapping("delete/{id}")

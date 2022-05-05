@@ -3,6 +3,7 @@ package com.example.firstchallengeback.dao.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "Category")
@@ -17,6 +18,6 @@ public class Category {
     private String title;
 
     @OneToMany(mappedBy = "categoryId")
-    private List<Task> tasks;
+    private List<Task> tasks = new ArrayList<>();
 
 }

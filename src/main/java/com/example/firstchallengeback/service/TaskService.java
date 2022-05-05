@@ -1,12 +1,12 @@
 package com.example.firstchallengeback.service;
 
-import com.example.firstchallengeback.dao.entity.Task;
+import com.example.firstchallengeback.dto.TaskDTO;
 
 public interface TaskService {
 
-    Task saveTask(Task task);
+    TaskDTO saveTask(TaskDTO taskDTO);
 
-    Task updateTask(Task task);
+    TaskDTO updateTask(TaskDTO taskDTO);
 
     void deleteTask(Long id);
 

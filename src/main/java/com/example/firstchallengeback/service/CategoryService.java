@@ -1,15 +1,17 @@
 package com.example.firstchallengeback.service;
 
-import com.example.firstchallengeback.dao.entity.Category;
+import com.example.firstchallengeback.dto.CategoryDTO;
 
 import java.util.List;
 
 public interface CategoryService {
 
-    List<Category> getAllCategories();
+    List<CategoryDTO> getAllCategories();
 
-    Category saveCategory(Category category);
+    CategoryDTO saveCategory(CategoryDTO categoryDTO);
 
     void deleteCategory(Long id);
+
+    CategoryDTO findById(Long id);
 
 }

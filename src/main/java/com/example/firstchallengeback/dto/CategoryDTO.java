@@ -2,6 +2,7 @@ package com.example.firstchallengeback.dto;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -11,6 +12,6 @@ public class CategoryDTO {
 
     private String title;
 
-    private List<TaskDTO> tasks;
+    private List<TaskDTO> tasks = new ArrayList<>();
 
 }

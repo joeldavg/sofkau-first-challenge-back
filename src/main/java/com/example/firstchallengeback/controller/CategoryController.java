@@ -1,6 +1,6 @@
 package com.example.firstchallengeback.controller;
 
-import com.example.firstchallengeback.dao.entity.Category;
+import com.example.firstchallengeback.dto.CategoryDTO;
 import com.example.firstchallengeback.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,13 +15,13 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("getAll")
-    public List<Category> getAllCategories() {
+    public List<CategoryDTO> getAllCategories() {
         return categoryService.getAllCategories();
     }
 
     @PostMapping("save")
-    public Category saveCategory(@RequestBody Category category) {
-        return categoryService.saveCategory(category);
+    public CategoryDTO saveCategory(@RequestBody CategoryDTO categoryDTO) {
+        return categoryService.saveCategory(categoryDTO);
     }
 
     @DeleteMapping("delete/{id}")
